@@ -1,0 +1,33 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+#app {
+  padding: 2rem; /* only the page content gets spacing */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* left / right */
+  align-items: center;           /* vertically center links */
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left a,
+.nav-right a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-left a:last-child,
+.nav-right a:last-child {
+  margin-right: 0; /* remove margin from last link in each group */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
