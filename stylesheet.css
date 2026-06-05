@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
   padding: 1rem;
 }
+
 #app {
   padding: 2rem; /* only the page content gets spacing */
 }
@@ -30,4 +35,23 @@ nav {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+.dotgothic {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #1c1d30;
+}
+
+h1 {
+  color: #00FFB0;
+  font-family: "DotGothic16", sans-serif;
+}
+
+p {
+  color: white;
 }
