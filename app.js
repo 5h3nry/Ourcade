@@ -12,7 +12,7 @@ const state = {
 // ==========================
 
 function Nav() {
-  return `
+  return String.raw`
     <nav>
       <div class="nav-left">
         <a href="#/">Home</a>
@@ -63,7 +63,7 @@ function render() {
   const app = document.getElementById('app');
   const nav = document.getElementById('nav');
 
-  nav.innerHTML = Nav();  //  display nav every time
+  //nav.innerHTML = Nav();  //  display nav every time DELETE COMMENT AFTER DONE ARRANGING REGULAR CONTENT
 
   if (state.isLoading) {
     app.innerHTML = `<p>Loading...</p>`;
@@ -82,14 +82,17 @@ function render() {
 
 function Home() {
   if (state.user) {
-    return `
+    return String.raw`
       <h1>Welcome back, <span style="color: #0593f2;">${state.user}</span></h1>
       <p> This is the Home page when the user is logged in </p>
     `;
   }
 
-  return `
-    <h1>Welcome</h1>
+  return String.raw`
+    <div class="hero">
+      <h2 class="hero">Featured</h2>
+    </div>
+    <h1 class="title">OurCade</h1>
     <p>This is the Home Page</p>
   `;
 }
@@ -97,13 +100,13 @@ function Home() {
 
 function LogIn() {
   if (state.user) {
-    return `
+    return String.raw`
       <h1>Welcome back, <span style="color: #0593f2;">${state.user}</span></h1>
       <button id="logoutBtn">Logout</button>
     `;
   }
 
-  return `
+  return String.raw`
     <h1>Login</h1>
     <input id="username" placeholder="Username"> <br> <br>
     <input id="password" type="password" placeholder="Password"> <br><br>
@@ -112,14 +115,14 @@ function LogIn() {
 }
 
 function Dashboard() {
-  return `
+  return String.raw`
     <h1><span style="color: #0593f2;">${state.user}'s </span>Dashboard</h1>
     <p>Protected content. User must be logged in to view this page</p>
   `;
 }
 
 function About() {
-  return `
+  return String.raw`
   <h1>About Page</h1>
   <p> Some information about the app</p>`;
 }
