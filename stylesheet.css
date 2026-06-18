@@ -22,9 +22,22 @@ nav {
 }
 
 div.hero {
-  background-color: black;
+  display: flexbox;
   width: 100%;
   height: 40vh;
+  text-align: center;
+  align-content: center;
+  background-image: url(Media/1200px-2026_Season_2_Promo_01.png);
+  background-size: cover;
+}
+
+div.hero h1 {
+  color: white;
+}
+
+div.hero p {
+  color: white;
+  padding: 5% 10%;
 }
 
 .nav-left a,
@@ -50,7 +63,7 @@ nav a:hover {
 }
 
 body {
-  background-color: #282A4C;
+  background-color: #3b0092;
 }
 
 h1 {

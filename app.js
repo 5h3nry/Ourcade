@@ -83,14 +83,21 @@ function render() {
 function Home() {
   if (state.user) {
     return String.raw`
-      <h1>Welcome back, <span style="color: #0593f2;">${state.user}</span></h1>
-      <p> This is the Home page when the user is logged in </p>
-    `;
+    <div class="hero">
+      <h2 class="hero">Get Ready for Pandemonium</h2>
+      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium Act 2.</p>
+      <button type="button">Read More</button>
+    </div>
+    <h1 class="title">OurCade</h1>
+    <p>This is the Home Page</p>
+  `;
   }
 
   return String.raw`
     <div class="hero">
-      <h2 class="hero">Featured</h2>
+      <h2 class="hero">Get Ready for Pandemonium</h2>
+      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium Act 2.</p>
+      <button type="button">Read More</button>
     </div>
     <h1 class="title">OurCade</h1>
     <p>This is the Home Page</p>
