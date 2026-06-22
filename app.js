@@ -15,15 +15,13 @@ function Nav() {
   return String.raw`
     <nav>
       <div class="nav-left">
-        <a href="#/">Home</a>
+        <a href="#/"><img src="Media\Hompage Icon Active.png"></a>
         <a href="#/about">About</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
-      </div>
-      <div class="nav-right">
         ${state.user 
           ? `<a href="#" id="logoutLink">Logout</a>` 
           : `<a href="#/login">Login</a>`}
-      </div>
+      </div>        
     </nav>
   `;
 }
@@ -63,7 +61,7 @@ function render() {
   const app = document.getElementById('app');
   const nav = document.getElementById('nav');
 
-  //nav.innerHTML = Nav();  //  display nav every time DELETE COMMENT AFTER DONE ARRANGING REGULAR CONTENT
+  nav.innerHTML = Nav();  //  display nav every time DELETE COMMENT AFTER DONE ARRANGING REGULAR CONTENT
 
   if (state.isLoading) {
     app.innerHTML = `<p>Loading...</p>`;
@@ -84,8 +82,8 @@ function Home() {
   if (state.user) {
     return String.raw`
     <div class="hero">
-      <h2 class="hero">Get Ready for Pandemonium</h2>
-      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium Act 2.</p>
+      <h1 class="hero">Get Ready for <b class="jacquard-12-regular">Pandemonium</b></h2>
+      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
     <h1 class="title">OurCade</h1>
@@ -95,8 +93,8 @@ function Home() {
 
   return String.raw`
     <div class="hero">
-      <h2 class="hero">Get Ready for Pandemonium</h2>
-      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium Act 2.</p>
+      <h1 class="hero">Get Ready for <b class="jacquard-12-regular">Pandemonium</b></h2>
+      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
     <h1 class="title">OurCade</h1>

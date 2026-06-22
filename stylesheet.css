@@ -5,6 +5,7 @@ html {
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box; /*Border box because omg WHO invented content box it's actually so silly*/
 }
 
 body {
@@ -12,13 +13,33 @@ body {
   color: white;
 }
 
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  text-shadow: #218380 1px 0 10px;
+}
+
 nav {
   display: flex;
-  justify-content: space-between; /* left / right */
+  justify-content: space-evenly; /* left / right */
   align-items: center;           /* vertically center links */
-  padding: 1rem 2rem;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 5px;
+
+  position: absolute;
+  width: 50%;
+  height: 5%;
+  bottom: 2.5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+nav img {
+  width: 20%;
+  height: auto;
 }
 
 div.hero {
@@ -33,6 +54,7 @@ div.hero {
 
 div.hero h1 {
   color: white;
+  text-shadow: #218380 1px 0 10px;
 }
 
 div.hero p {
