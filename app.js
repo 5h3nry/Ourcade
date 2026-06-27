@@ -15,7 +15,9 @@ function Nav() {
   return String.raw`
     <nav>
       <div class="nav-left">
-        <a href="#/"><img src="Media\Hompage Icon Active.png"></a>
+        ${hash = '#/' 
+          ? `<a href="#/"><img src="Media\\Hompage Icon Active.png"></a>`
+          : `<a href="#/"><img src="Media\\Hompage Icon Inactive.png"></a>`}
         <a href="#/about">About</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
         ${state.user 
@@ -93,6 +95,7 @@ function Home() {
 
   return String.raw`
     <div class="hero">
+      <img src="Media/1200px-2026_Season_2_Promo_01.png">
       <h1 class="hero">Get Ready for <b class="jacquard-12-regular">Pandemonium</b></h2>
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
