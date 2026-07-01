@@ -90,18 +90,49 @@
 
 
 /* OurCade Title Styling */
+
+  @keyframes title-background {
+    from {
+      background-position: 0% center;
+    }
+
+    to {
+      background-position: -200% center;
+    }
+  }  
+
   h1.title{
+    animation: title-background 3s linear infinite;
+    background: linear-gradient(to right, #682183, #702183, #782183, #802183, #83217e, #832167, #83216e, #682183);
+    font-style: normal;
     position: absolute;
-    color: #21834f;
+    color: blueviolet;
     font-size: 4.5rem;
     justify-content: center;
     top: 45vh;
     left: 50%;
     transform: translate(-50%, 0px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+  }
+
+  @keyframes title-span-background {
+    from {
+      background-position: 0% center;
+    }
+
+    to {
+      background-position: -200% center;
+    }
   }
 
   h1.title > span {
-    background: #218380;
+    animation: title-span-background 3s linear infinite;
+    background: linear-gradient(to right, #218368, #218370, #218378, #218380, #217e83, #217683, #216e83, #218368);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size: 200%;
   }
+
+  
