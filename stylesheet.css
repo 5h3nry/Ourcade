@@ -112,7 +112,7 @@
     top: 45vh;
     left: 50%;
     transform: translate(-50%, 0px);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%;
   }
@@ -130,7 +130,7 @@
   h1.title > span {
     animation: title-span-background 3s linear infinite;
     background: linear-gradient(to right, #218368, #218370, #218378, #218380, #217e83, #217683, #216e83, #218368);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%;
   }
