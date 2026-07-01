@@ -10,15 +10,20 @@ html {
 
 body {
   font-family: system-ui, sans-serif;
-  color: white;
+  background-color: #000c18;
 }
 
-.jacquard-12-regular {
-  font-family: "Jacquard 12", system-ui;
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
-  text-shadow: #218380 1px 0 10px;
+  font-size: 65px;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 nav {
@@ -45,7 +50,7 @@ nav img {
 div.hero {
   display: relative;
   width: 100%;
-  height: 40vh;
+  height: 55vh;
   text-align: center;
   align-content: center;
 }
@@ -63,14 +68,14 @@ div.hero p {
 div.hero img {
   position: absolute;
   width: 100%;
-  height: 40vh;
+  height: 55vh;
   z-index: -1;
   object-fit: cover;
   left: 0px;
   top: 0px;
 
-  -webkit-mask-image: linear-gradient(black, transparent);
-  mask-image: linear-gradient(#000, transparent);
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+  mask-image: linear-gradient(to top, transparent 5%, black 100%);
 }
 
 .nav-left a,
@@ -87,23 +92,6 @@ div.hero img {
 
 nav a:hover {
   text-decoration: underline;
-}
-
-.unifrakturmaguntia-regular {
-  font-family: "UnifrakturMaguntia", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 65px;
-}
-
-.jersey-10-regular {
-  font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  background-color: #3b0092;
 }
 
 h1 {

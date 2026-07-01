@@ -18,7 +18,7 @@ function Nav() {
         ${hash = '#/' 
           ? `<a href="#/"><img src="Media\\Hompage Icon Active.png"></a>`
           : `<a href="#/"><img src="Media\\Hompage Icon Inactive.png"></a>`}
-        <a href="#/about">About</a>
+        <a href="#/activity">Activity</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
         ${state.user 
           ? `<a href="#" id="logoutLink">Logout</a>` 
@@ -35,7 +35,7 @@ const routes = {
   '#/': Home,
   '#/login': LogIn,
   '#/dashboard': Dashboard,
-  '#/about': About
+  '#/activity': Activity,
 };
 
 // Define protected routes list (what's behind the login)
@@ -130,7 +130,7 @@ function Dashboard() {
   `;
 }
 
-function About() {
+function Activity() {
   return String.raw`
   <h1>About Page</h1>
   <p> Some information about the app</p>`;
