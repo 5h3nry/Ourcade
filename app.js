@@ -84,23 +84,24 @@ function Home() {
   if (state.user) {
     return String.raw`
     <div class="hero">
-      <h1 class="hero">Get Ready for <b class="jacquard-12-regular">Pandemonium</b></h2>
+      <img src="Media\Locke Key Art.jpg">
+      <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
-    <h1 class="title">OurCade</h1>
+    <h1 class="title jersey-10-regular">OurCade</h1>
     <p>This is the Home Page</p>
   `;
   }
 
   return String.raw`
     <div class="hero">
-      <img src="Media/1200px-2026_Season_2_Promo_01.png">
-      <h1 class="hero">Get Ready for <b class="jacquard-12-regular">Pandemonium</b></h2>
+      <img src="Media\Locke Key Art.jpg">
+      <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
-    <h1 class="title">OurCade</h1>
+    <h1 class="title jersey-10-regular">OurCade</h1>
     <p>This is the Home Page</p>
   `;
 }
