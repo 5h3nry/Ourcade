@@ -89,7 +89,7 @@ function Home() {
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
-    <h1 class="title jersey-10-regular">OurCade</h1>
+    <h1 class="title jersey-10-regular"><span class="title">Our</span>Cade</h1>
     <p>This is the Home Page</p>
   `;
   }

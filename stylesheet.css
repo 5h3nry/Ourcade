@@ -1,5 +1,4 @@
 /* Basic Page Setup */
-
   html {
     scroll-behavior: smooth;
   }
@@ -13,8 +12,10 @@
   body {
     font-family: system-ui, sans-serif;
     background-color: #000c18;
+    color: white;
   }
 
+  /* Google Fonts*/
   .unifrakturmaguntia-regular {
     font-family: "UnifrakturMaguntia", cursive;
     font-weight: 400;
@@ -27,6 +28,8 @@
     font-weight: 400;
     font-style: normal;
   }
+
+
 
 /* Nav Stylings */
   nav {
@@ -49,6 +52,8 @@
     width: 20%;
     height: auto;
   }
+
+
 
 /* Hero Div Stylings */
   div.hero {
@@ -82,9 +87,17 @@
     mask-image: linear-gradient(to top, transparent 5%, black 100%);
   }
 
+
+
 /* OurCade Title Styling */
   h1.title{
-    color: white;
+    position: absolute;
+    color: #21834f;
+    font-size: 4.5rem;
+    justify-content: center;
+    top: 45vh;
+    left: 50%;
+    transform: translate(-50%, 0px);
   }
 
   h1.title > span {
