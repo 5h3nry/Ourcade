@@ -1,104 +1,94 @@
-html {
-  scroll-behavior: smooth;
-}
+/* Basic Page Setup */
 
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box; /*Border box because omg WHO invented content box it's actually so silly*/
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  font-family: system-ui, sans-serif;
-  background-color: #000c18;
-}
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*Border box because omg WHO invented content box it's actually so silly*/
+  }
 
-.unifrakturmaguntia-regular {
-  font-family: "UnifrakturMaguntia", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 65px;
-}
+  body {
+    font-family: system-ui, sans-serif;
+    background-color: #000c18;
+  }
 
-.jersey-10-regular {
-  font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  .unifrakturmaguntia-regular {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+  }
 
-nav {
-  display: flex;
-  justify-content: space-evenly; /* left / right */
-  align-items: center;           /* vertically center links */
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50px;
-  padding: 5px;
+  .jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-  position: absolute;
-  width: 50%;
-  height: 5%;
-  bottom: 2.5%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
+/* Nav Stylings */
+  nav {
+    display: flex;
+    justify-content: space-evenly; /* left / right */
+    align-items: center;           /* vertically center links */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    padding: 5px;
 
-nav img {
-  width: 20%;
-  height: auto;
-}
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 
-div.hero {
-  display: relative;
-  width: 100%;
-  height: 55vh;
-  text-align: center;
-  align-content: center;
-}
+  nav img {
+    width: 20%;
+    height: auto;
+  }
 
-div.hero h1 {
-  color: white;
-  text-shadow: #218380 1px 0 10px;
-}
+/* Hero Div Stylings */
+  div.hero {
+    display: relative;
+    width: 100%;
+    height: 55vh;
+    text-align: center;
+    align-content: center;
+  }
 
-div.hero p {
-  color: white;
-  padding: 5% 10%;
-}
+  div.hero h1 {
+    color: white;
+    text-shadow: #218380 1px 0 10px;
+  }
 
-div.hero img {
-  position: absolute;
-  width: 100%;
-  height: 55vh;
-  z-index: -1;
-  object-fit: cover;
-  left: 0px;
-  top: 0px;
+  div.hero p {
+    color: white;
+    padding: 5% 10%;
+  }
 
-  -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
-  mask-image: linear-gradient(to top, transparent 5%, black 100%);
-}
+  div.hero > img {
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    z-index: -1;
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
 
-.nav-left a,
-.nav-right a {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: #333;
-}
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+    mask-image: linear-gradient(to top, transparent 5%, black 100%);
+  }
 
-.nav-left a:last-child,
-.nav-right a:last-child {
-  margin-right: 0; /* remove margin from last link in each group */
-}
+/* OurCade Title Styling */
+  h1.title{
+    color: white;
+  }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-h1 {
-  color: #00FFB0;
-  font-family: "DotGothic16", sans-serif;
-}
-
-p {
-  color: white;
-}
+  h1.title > span {
+    background: #218380;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
