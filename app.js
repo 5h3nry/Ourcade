@@ -89,8 +89,8 @@ function Home() {
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
-    <h1 class="title jersey-10-regular"><span class="title">Our</span>Cade</h1>
-    <p>This is the Home Page</p>
+    <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1>
+    <h2>Welcome, ${state.user}</p>
   `;
   }
 
@@ -101,7 +101,7 @@ function Home() {
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
-    <h1 class="title jersey-10-regular"><span class="title">Our</span>Cade</h1>
+    <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1>
     <p>This is the Home Page</p>
   `;
 }
@@ -110,12 +110,14 @@ function Home() {
 function LogIn() {
   if (state.user) {
     return String.raw`
-      <h1>Welcome back, <span style="color: #0593f2;">${state.user}</span></h1>
+      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+      <h1>Welcome back, <span>${state.user}</span></h1>
       <button id="logoutBtn">Logout</button>
     `;
   }
 
   return String.raw`
+    <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
     <h1>Login</h1>
     <input id="username" placeholder="Username"> <br> <br>
     <input id="password" type="password" placeholder="Password"> <br><br>

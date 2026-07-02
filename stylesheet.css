@@ -105,16 +105,20 @@
     animation: title-background 3s linear infinite;
     background: linear-gradient(to right, #682183, #702183, #782183, #802183, #83217e, #832167, #83216e, #682183);
     font-style: normal;
-    position: absolute;
     color: blueviolet;
     font-size: 4.5rem;
+    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+  }
+
+  h1.title#home {
     justify-content: center;
     top: 45vh;
     left: 50%;
     transform: translate(-50%, 0px);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
+    position: absolute;
   }
 
   @keyframes title-span-background {
@@ -136,3 +140,9 @@
   }
 
   
+
+/* Login Stylings */
+
+  h1.title#login {
+    text-align: center;
+  }
