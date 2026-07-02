@@ -141,6 +141,29 @@
 
   
 
+  /* Homepage Stylings */
+
+  div.games {
+    display: flex;
+    background-color: #001932;
+    width: auto;
+    height: 175px;
+    margin-left: 5vw;
+    border-radius: 10px;
+    box-shadow: 5px 10px black;
+    justify-content: left;
+  }
+
+  div.games > h3 {
+    color: red;
+  }
+
+  div.games > img {
+    height: 90%;
+  }
+
+
+
 /* Login Stylings */
 
   h1.title#login {
