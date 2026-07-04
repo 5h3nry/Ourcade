@@ -1,171 +1,104 @@
-/* Basic Page Setup */
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box; /*Border box because omg WHO invented content box it's actually so silly*/
-  }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; /*Border box because omg WHO invented content box it's actually so silly*/
+}
 
-  body {
-    font-family: system-ui, sans-serif;
-    background-color: #000c18;
-    color: white;
-  }
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #000c18;
+}
 
-  /* Google Fonts*/
-  .unifrakturmaguntia-regular {
-    font-family: "UnifrakturMaguntia", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 65px;
-  }
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 65px;
+}
 
-  .jersey-10-regular {
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+nav {
+  display: flex;
+  justify-content: space-evenly; /* left / right */
+  align-items: center;           /* vertically center links */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 5px;
 
+  position: absolute;
+  width: 50%;
+  height: 5%;
+  bottom: 2.5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
-/* Nav Stylings */
-  nav {
-    display: flex;
-    justify-content: space-evenly; /* left / right */
-    align-items: center;           /* vertically center links */
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50px;
-    padding: 5px;
+nav img {
+  width: 20%;
+  height: auto;
+}
 
-    position: absolute;
-    width: 50%;
-    height: 5%;
-    bottom: 2.5%;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
+div.hero {
+  display: relative;
+  width: 100%;
+  height: 55dvh;
+  text-align: center;
+  align-content: center;
+}
 
-  nav img {
-    width: 20%;
-    height: auto;
-  }
+div.hero h1 {
+  color: white;
+  text-shadow: #218380 1px 0 10px;
+}
 
+div.hero p {
+  color: white;
+  padding: 5% 10%;
+}
 
+div.hero img {
+  position: absolute;
+  width: 100%;
+  height: 55dvh;
+  z-index: -1;
+  object-fit: cover;
+  left: 0px;
+  top: 0px;
 
-/* Hero Div Stylings */
-  div.hero {
-    display: relative;
-    width: 100%;
-    height: 55vh;
-    text-align: center;
-    align-content: center;
-  }
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+  mask-image: linear-gradient(to top, transparent 5%, black 100%);
+}
 
-  div.hero h1 {
-    color: white;
-    text-shadow: #218380 1px 0 10px;
-  }
+.nav-left a,
+.nav-right a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}
 
-  div.hero p {
-    color: white;
-    padding: 5% 10%;
-  }
+.nav-left a:last-child,
+.nav-right a:last-child {
+  margin-right: 0; /* remove margin from last link in each group */
+}
 
-  div.hero > img {
-    position: absolute;
-    width: 100%;
-    height: 55vh;
-    z-index: -1;
-    object-fit: cover;
-    left: 0px;
-    top: 0px;
+nav a:hover {
+  text-decoration: underline;
+}
 
-    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
-    mask-image: linear-gradient(to top, transparent 5%, black 100%);
-  }
+h1 {
+  color: #00FFB0;
+  font-family: "DotGothic16", sans-serif;
+}
 
-
-
-/* OurCade Title Styling */
-
-  @keyframes title-background {
-    from {
-      background-position: 0% center;
-    }
-
-    to {
-      background-position: -200% center;
-    }
-  }  
-
-  h1.title{
-    animation: title-background 3s linear infinite;
-    background: linear-gradient(to right, #682183, #702183, #782183, #802183, #83217e, #832167, #83216e, #682183);
-    font-style: normal;
-    color: blueviolet;
-    font-size: 4.5rem;
-    
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-  }
-
-  h1.title#home {
-    justify-content: center;
-    top: 45vh;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    position: absolute;
-  }
-
-  @keyframes title-span-background {
-    from {
-      background-position: 0% center;
-    }
-
-    to {
-      background-position: -200% center;
-    }
-  }
-
-  h1.title > span {
-    animation: title-span-background 3s linear infinite;
-    background: linear-gradient(to right, #218368, #218370, #218378, #218380, #217e83, #217683, #216e83, #218368);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-  }
-
-  
-
-  /* Homepage Stylings */
-
-  div.games {
-    display: flex;
-    background-color: #001932;
-    width: auto;
-    height: 175px;
-    margin-left: 5vw;
-    border-radius: 10px;
-    box-shadow: 5px 10px black;
-    justify-content: left;
-  }
-
-  div.games > h3 {
-    color: red;
-  }
-
-  div.games > img {
-    height: 90%;
-  }
-
-
-
-/* Login Stylings */
-
-  h1.title#login {
-    text-align: center;
-  }
+p {
+  color: white;
+}
