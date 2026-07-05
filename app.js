@@ -16,9 +16,9 @@ function Nav() {
     <nav>
       <div class="nav-left">
         ${hash = '#/' 
-          ? `<a href="#/"><img src="Media/Hompage Icon Active.png"></a>`
-          : `<a href="#/"><img src="Media/Hompage Icon Inactive.png"></a>`}
-        <a href="#/about">About</a>
+          ? `<a href="#/"><img src="Media\\Hompage Icon Active.png"></a>`
+          : `<a href="#/"><img src="Media\\Hompage Icon Inactive.png"></a>`}
+        <a href="#/activity">Activity</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
         ${state.user 
           ? `<a href="#" id="logoutLink">Logout</a>` 
@@ -35,7 +35,7 @@ const routes = {
   '#/': Home,
   '#/login': LogIn,
   '#/dashboard': Dashboard,
-  '#/about': About,
+  '#/activity': Activity,
 };
 
 // Define protected routes list (what's behind the login)
@@ -89,8 +89,8 @@ function Home() {
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
-    <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1>
-    <h2>Welcome, ${state.user}</p>
+    <h1 class="title jersey-10-regular">OurCade</h1>
+    <p>This is the Home Page</p>
   `;
   }
 
@@ -101,13 +101,8 @@ function Home() {
       <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
       <button type="button">Read More</button>
     </div>
-    <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1> <br>
-
-    <div class="games">
-      <h3>Newly Updated →</h3>
-      <img src="Media/Game Thumbnails/Overwatch2.png">
-      <img src="Media/Game Thumbnails/League of Legends.png">
-    </div>
+    <h1 class="title jersey-10-regular">OurCade</h1>
+    <p>This is the Home Page</p>
   `;
 }
 
@@ -115,14 +110,12 @@ function Home() {
 function LogIn() {
   if (state.user) {
     return String.raw`
-      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
-      <h1>Welcome back, <span>${state.user}</span></h1>
+      <h1>Welcome back, <span style="color: #0593f2;">${state.user}</span></h1>
       <button id="logoutBtn">Logout</button>
     `;
   }
 
   return String.raw`
-    <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
     <h1>Login</h1>
     <input id="username" placeholder="Username"> <br> <br>
     <input id="password" type="password" placeholder="Password"> <br><br>
@@ -137,7 +130,7 @@ function Dashboard() {
   `;
 }
 
-function About() {
+function Activity() {
   return String.raw`
   <h1>About Page</h1>
   <p> Some information about the app</p>`;
