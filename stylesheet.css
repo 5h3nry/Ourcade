@@ -50,7 +50,7 @@ nav img {
 div.hero {
   display: relative;
   width: 100%;
-  height: 55vh;
+  height: 55dvh;
   text-align: center;
   align-content: center;
 }
@@ -68,7 +68,7 @@ div.hero p {
 div.hero img {
   position: absolute;
   width: 100%;
-  height: 55vh;
+  height: 55dvh;
   z-index: -1;
   object-fit: cover;
   left: 0px;
