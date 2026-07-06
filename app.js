@@ -15,9 +15,7 @@ function Nav() {
   return String.raw`
     <nav>
       <div class="nav-left">
-        ${hash = '#/' 
-          ? `<a href="#/"><img src="Media/Hompage Icon Active.png"></a>`
-          : `<a href="#/"><img src="Media/Hompage Icon Inactive.png"></a>`}
+        <a href="#/"><img src="Media/Homepage Icon.png"></a>
         <a href="#/about">About</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
         ${state.user 
@@ -83,30 +81,49 @@ function render() {
 function Home() {
   if (state.user) {
     return String.raw`
-    <div class="hero">
-      <img src="Media\Locke Key Art.jpg">
-      <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
-      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
-      <button type="button">Read More</button>
+    <section>
+      <div class="hero">
+        <img src="Media\Locke Key Art.jpg">
+        <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
+        <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
+        <button type="button">Read More</button>
+      </div>
+    </section>
+    
+    <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1> <br>
+
+    <div class="shelf">
+      <div>
+        <h3>Newly Updated →</h3>
+      </div>
+      <div class="games">
+        <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+      </div>
     </div>
-    <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1>
-    <h2>Welcome, ${state.user}</p>
   `;
   }
 
   return String.raw`
-    <div class="hero">
-      <img src="Media\Locke Key Art.jpg">
-      <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
-      <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
-      <button type="button">Read More</button>
-    </div>
+    <section>
+      <div class="hero">
+        <img src="Media\Locke Key Art.jpg">
+        <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
+        <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
+        <button type="button">Read More</button>
+      </div>
+    </section>
+    
     <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1> <br>
 
-    <div class="games">
-      <h3>Newly Updated →</h3>
-      <img src="Media/Game Thumbnails/Overwatch.png">
-      <img src="Media/Game Thumbnails/League of Legends.png">
+    <div class="shelf">
+      <div>
+        <h3>Newly Updated →</h3>
+      </div>
+      <div class="games">
+        <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+      </div>
     </div>
   `;
 }

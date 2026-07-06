@@ -143,8 +143,11 @@
 
   /* Homepage Stylings */
 
-  div.games {
-    display: flex;
+  div.shelf {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+
     background-color: #001932;
     width: auto;
     height: 175px;
@@ -154,12 +157,23 @@
     justify-content: left;
   }
 
-  div.games > h3 {
+  div.shelf div {
+  margin: 10px;
+  }
+
+  div.games {
+    display: flex;
+    justify-content: left;
+  }
+
+  div.shelf h3 {
     color: white;
   }
 
   div.games > img {
-    height: 90%;
+    height: 100%;
+    margin: 0px 10px;
+    box-shadow: 5px 5px purple
   }
 
 
