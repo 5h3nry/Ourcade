@@ -105,7 +105,7 @@ function Home() {
 
     <div class="games">
       <h3>Newly Updated →</h3>
-      <img src="Media/Game Thumbnails/Overwatch2.png">
+      <img src="Media/Game Thumbnails/Overwatch.png">
       <img src="Media/Game Thumbnails/League of Legends.png">
     </div>
   `;
