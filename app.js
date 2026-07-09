@@ -14,14 +14,18 @@ const state = {
 function Nav() {
   return String.raw`
     <nav>
-      <div class="nav-left">
-        <a href="#/"><img src="Media/Homepage Icon.png"></a>
+        ${hash = '/#'
+          ? `<div class='active'>
+            <a href="#/"><img src="Media/Homepage Icon.png"></a>
+            </div>` 
+          : `<div>
+            <a href="#/"><img src="Media/Homepage Icon.png"></a>
+            </div>`}
         <a href="#/about">About</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
         ${state.user 
           ? `<a href="#" id="logoutLink">Logout</a>` 
           : `<a href="#/login">Login</a>`}
-      </div>        
     </nav>
   `;
 }
@@ -86,7 +90,7 @@ function Home() {
         <img src="Media\Locke Key Art.jpg">
         <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
         <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
-        <button type="button">Read More</button>
+        <a class="button" href="https://youtu.be/1UZGkOzRlws?si=rKFICt2vB0ESaUnd">Experience Pandemonium</a>
       </div>
     </section>
     
@@ -99,6 +103,38 @@ function Home() {
       <div class="games">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+      </div>
+    </div>
+
+    <div class="shelf">
+      <div>
+        <h3>Friend Activity →</h3>
+      </div>
+      <div class="games">
+        <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+      </div>
+    </div>
+
+    <div class="shelf">
+      <div>
+        <h3>Newly Updated →</h3>
+      </div>
+      <div class="games">
+        <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
       </div>
     </div>
   `;
@@ -110,7 +146,7 @@ function Home() {
         <img src="Media\Locke Key Art.jpg">
         <h1 class="hero">Get Ready for <b class="unifrakturmaguntia-regular">Pandemonium</b></h2>
         <p>Move over Vayne, there's a new Demon Hunter in town. Play as the latest Champion 'Locke' in League of Legend's demon packed summer event - Pandemonium: Act 2.</p>
-        <button type="button">Read More</button>
+        <a class="button" href="https://youtu.be/1UZGkOzRlws?si=rKFICt2vB0ESaUnd">Experience Pandemonium</a>
       </div>
     </section>
     
@@ -121,7 +157,37 @@ function Home() {
         <h3>Newly Updated →</h3>
       </div>
       <div class="games">
+        <img src="Media/Game Thumbnails/Minecraft.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/Outlast Trials.png">
+      </div>
+    </div>
+
+    <div class="shelf">
+      <div>
+        <h3>Friends are playing →</h3>
+      </div>
+      <div class="games">
+        <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+      </div>
+    </div>
+
+    <div class="shelf">
+      <div>
+        <h3>Newly Updated →</h3>
+      </div>
+      <div class="games">
+        <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
       </div>
     </div>
@@ -225,5 +291,6 @@ function logout() {
 // 8. Bootstrapping - App Start
 // ==========================
 
+window.addEventListener('hashchange', Nav)
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);
