@@ -30,8 +30,10 @@
   }
 
   #app {
-    height: 95%;
+    overflow-y: scroll;
+    height: 95dvh;
     width: auto;
+    position: relative;
   }
 
 

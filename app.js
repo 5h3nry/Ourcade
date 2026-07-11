@@ -21,7 +21,7 @@ function Nav() {
           : `<div>
             <a href="#/"><img src="Media/Homepage Icon.png"></a>
             </div>`}
-        <a href="#/about">About</a>
+        <a href="#/activity">Activity</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
         ${state.user 
           ? `<a href="#" id="logoutLink">Logout</a>` 
