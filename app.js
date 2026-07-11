@@ -37,11 +37,11 @@ const routes = {
   '#/': Home,
   '#/login': LogIn,
   '#/dashboard': Dashboard,
-  '#/about': About,
+  '#/activity': Activity,
 };
 
 // Define protected routes list (what's behind the login)
-const protectedRoutes = ['#/dashboard'];
+const protectedRoutes = ['#/dashboard', '#/activity'];
 
 function router() {
   const hash = window.location.hash || '#/';
@@ -220,9 +220,9 @@ function Dashboard() {
   `;
 }
 
-function About() {
+function Activity() {
   return String.raw`
-  <h1>About Page</h1>
+  <h1>Activity Page</h1>
   <p> Some information about the app</p>`;
 }
 
