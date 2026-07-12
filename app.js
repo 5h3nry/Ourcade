@@ -294,3 +294,4 @@ function logout() {
 window.addEventListener('hashchange', Nav)
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);
+window.location.hash = '#/home';
