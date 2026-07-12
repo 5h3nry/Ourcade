@@ -14,18 +14,19 @@ const state = {
 function Nav() {
   return String.raw`
     <nav>
-        ${hash = '/#home'
+        ${hash = '#/home'
           ? `<div class='active'>
-            <a href="#/home"><img src="Media/Homepage Icon.png"></a>
+            <a href="#/home"><img src="Media/Home.png"></a>
             </div>` 
           : `<div class='inactive'>
-            <a href="#/home"><img src="Media/Homepage Icon.png"></a>
+            <a href="#/home"><img src="Media/Home.png"></a>
             </div>`}
-        <a href="#/activity">Activity</a>
-        ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
+        <div><a href="#/activity"><img src="Media/Activity.png"></a></div>
+        <a id="review" href="#/review"><img src="Media/Review.png"></a>
+        <div><a href="#/dashboard"><img src="Media/PFP.png"></a></div>
         ${state.user 
-          ? `<a href="#" id="logoutLink">Logout</a>` 
-          : `<a href="#/login">Login</a>`}
+          ? `<div><a href="#" id="logoutLink"><img src="Media/Logout.png"></a></div>` 
+          : `<div><a href="#/login"><img src="Media/Login.png"></a></div>`}
     </nav>
   `;
 }
@@ -38,6 +39,7 @@ const routes = {
   '#/login': LogIn,
   '#/dashboard': Dashboard,
   '#/activity': Activity,
+  '#/review': Review,
 };
 
 // Define protected routes list (what's behind the login)
@@ -226,6 +228,12 @@ function Activity() {
   <p> Some information about the app</p>`;
 }
 
+function Review() {
+  return String.raw`
+  <h1>Review</h1>
+  <p> Some information about the app</p>`;
+}
+
 // ==========================
 // 6. Event Binding
 // ==========================
@@ -291,7 +299,7 @@ function logout() {
 // 8. Bootstrapping - App Start
 // ==========================
 
-window.addEventListener('hashchange', Nav)
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);
+window.addEventListener('hashchange', Nav)
 window.location.hash = '#/home';
