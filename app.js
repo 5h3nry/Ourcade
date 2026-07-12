@@ -14,12 +14,12 @@ const state = {
 function Nav() {
   return String.raw`
     <nav>
-        ${hash = '/#'
+        ${hash = '/#home'
           ? `<div class='active'>
-            <a href="#/"><img src="Media/Homepage Icon.png"></a>
+            <a href="#/home"><img src="Media/Homepage Icon.png"></a>
             </div>` 
-          : `<div>
-            <a href="#/"><img src="Media/Homepage Icon.png"></a>
+          : `<div class='inactive'>
+            <a href="#/home"><img src="Media/Homepage Icon.png"></a>
             </div>`}
         <a href="#/activity">Activity</a>
         ${state.user ? `<a href="#/dashboard">Dashboard</a>` : ''}
@@ -34,7 +34,7 @@ function Nav() {
 // ==========================
 
 const routes = {
-  '#/': Home,
+  '#/home': Home,
   '#/login': LogIn,
   '#/dashboard': Dashboard,
   '#/activity': Activity,
@@ -72,7 +72,7 @@ function render() {
     return;
   }
 
-  const page = routes[window.location.hash || '#/'];
+  const page = routes[window.location.hash || '#/home'];
   app.innerHTML = page ? page() : `<h1>404 <br><br> Page does not exist</h1>`;
 
   attachEvents();
