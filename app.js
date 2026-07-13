@@ -207,11 +207,21 @@ function LogIn() {
   }
 
   return String.raw`
-    <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
-    <h1>Login</h1>
-    <input id="username" placeholder="Username"> <br> <br>
-    <input id="password" type="password" placeholder="Password"> <br><br>
-    <button id="loginBtn">Login</button>
+    <h1 class="title jersey-10-regular login"><span class="title">Our</span>Cade</h1>
+    <br>
+    <img class="login" src="Media/PFP.png">
+    <h2 class="jersey-10-regular login">Login</h1>
+    <h3 class="jersey-10-regular login">Choose your character!</h2>
+    <br>
+
+    
+    <form class="login">
+      <h3>Username:</h3>
+      <input id="username" placeholder="Username"> <br> <br>
+      <h3>Password:</h3>
+      <input id="password" type="password" placeholder="Password"> <br><br>
+      <button class="button" id="loginBtn">Login</button>
+    </form>
   `;
 }
 
