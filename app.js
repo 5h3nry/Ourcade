@@ -100,35 +100,36 @@ function Home() {
 
     <div class="shelf">
       <div>
+        <img class="shelf" src="Media/Discover.png">
         <h3>Newly Updated →</h3>
       </div>
       <div class="games">
+        <img src="Media/Game Thumbnails/Minecraft.png">
+        <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/Outlast Trials.png">
+      </div>
+    </div>
+
+    <div class="shelf">
+      <div>
+        <img class="shelf" src="Media/Activity.png">
+        <h3>Friends are playing →</h3>
+      </div>
+      <div class="games">
+        <img src="Media/Game Thumbnails/Pokopia.jpg">
+        <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/StardewValley.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/Outlast Trials.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
       </div>
     </div>
 
     <div class="shelf">
       <div>
-        <h3>Friend Activity →</h3>
-      </div>
-      <div class="games">
-        <img src="Media/Game Thumbnails/Overwatch.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-      </div>
-    </div>
-
-    <div class="shelf">
-      <div>
-        <h3>Newly Updated →</h3>
+        <img class="shelf" src="Media/Popular.png">
+        <h3>Popular →</h3>
       </div>
       <div class="games">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
