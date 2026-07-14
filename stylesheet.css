@@ -180,6 +180,10 @@
     background-size: 200%;
   }
 
+  div.title {
+    background: #001932;
+  }
+
   
 
   /* Homepage Stylings */
@@ -210,7 +214,16 @@
   }
 
   div.shelf h3 {
+    position: relative;
     color: white;
+    display: inline;
+    top: -25%;
+  }
+
+  img.shelf {
+    height: 25px;
+    width: auto;
+    display: inline;
   }
 
   div.games > img {
@@ -223,7 +236,7 @@
 
 /* Login Stylings */
 
-  h1.login, h2.login, h3.login {
+  h1.login, h1#login, h2.login, h3.login {
     text-align: center;
   }
 
@@ -238,6 +251,7 @@
   img.login {
     display: flex;
     margin: auto;
+    margin-top: 5vh;
     height: auto;
     width: 50%;
   }

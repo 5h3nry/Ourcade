@@ -156,6 +156,7 @@ function Home() {
 
     <div class="shelf">
       <div>
+        <img class="shelf" src="Media/Discover.png">
         <h3>Newly Updated →</h3>
       </div>
       <div class="games">
@@ -168,21 +169,23 @@ function Home() {
 
     <div class="shelf">
       <div>
+        <img class="shelf" src="Media/Activity.png">
         <h3>Friends are playing →</h3>
       </div>
       <div class="games">
+        <img src="Media/Game Thumbnails/Pokopia.jpg">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
+        <img src="Media/Game Thumbnails/StardewValley.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/Outlast Trials.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
       </div>
     </div>
 
     <div class="shelf">
       <div>
-        <h3>Newly Updated →</h3>
+        <img class="shelf" src="Media/Popular.png">
+        <h3>Popular →</h3>
       </div>
       <div class="games">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
@@ -200,14 +203,18 @@ function Home() {
 function LogIn() {
   if (state.user) {
     return String.raw`
+    <div class="title">
       <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+    </div>
       <h1>Welcome back, <span>${state.user}</span></h1>
       <button id="logoutBtn">Logout</button>
     `;
   }
 
   return String.raw`
-    <h1 class="title jersey-10-regular login"><span class="title">Our</span>Cade</h1>
+    <div class="title">
+      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+    </div>
     <br>
     <img class="login" src="Media/PFP.png">
     <h2 class="jersey-10-regular login">Login</h1>
@@ -227,6 +234,9 @@ function LogIn() {
 
 function Dashboard() {
   return String.raw`
+    <div class="title">
+      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+    </div>
     <h1><span style="color: #0593f2;">${state.user}'s </span>Dashboard</h1>
     <p>Protected content. User must be logged in to view this page</p>
   `;
@@ -234,12 +244,19 @@ function Dashboard() {
 
 function Activity() {
   return String.raw`
+  <div class="title">
+      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+  </div>
+
   <h1>Activity Page</h1>
   <p> Some information about the app</p>`;
 }
 
 function Review() {
   return String.raw`
+    <div class="title">
+      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+    </div>
   <h1>Review</h1>
   <p> Some information about the app</p>`;
 }
