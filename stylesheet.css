@@ -1,7 +1,7 @@
 /* Basic Page Setup */
   html {
     scroll-behavior: smooth;
-    height: 100dvh;
+    height: 100vh;
   }
 
   * {
@@ -14,7 +14,7 @@
     font-family: system-ui, sans-serif;
     background-color: #000c18;
     color: white;
-    height: 100dvh;
+    height: 100vh;
   }
 
   /* Google Fonts*/
@@ -70,8 +70,8 @@
     border-radius: 100%;
     fill: white;
     background-color: white;
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
   }
 
   #review img {
