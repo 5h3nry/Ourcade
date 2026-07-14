@@ -104,10 +104,11 @@ function Home() {
         <h3>Newly Updated →</h3>
       </div>
       <div class="games">
+        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+        <img src="Media/Game Thumbnails/Subnautica2.jpg">
         <img src="Media/Game Thumbnails/Minecraft.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
-        <img src="Media/Game Thumbnails/Outlast Trials.png">
       </div>
     </div>
 
@@ -121,7 +122,7 @@ function Home() {
         <img src="Media/Game Thumbnails/Overwatch.jpg">
         <img src="Media/Game Thumbnails/StardewValley.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
       </div>
     </div>
@@ -134,7 +135,7 @@ function Home() {
       <div class="games">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
@@ -161,10 +162,11 @@ function Home() {
         <h3>Newly Updated →</h3>
       </div>
       <div class="games">
+        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+        <img src="Media/Game Thumbnails/Subnautica2.jpg">
         <img src="Media/Game Thumbnails/Minecraft.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
-        <img src="Media/Game Thumbnails/Outlast Trials.png">
       </div>
     </div>
 
@@ -178,7 +180,7 @@ function Home() {
         <img src="Media/Game Thumbnails/Overwatch.jpg">
         <img src="Media/Game Thumbnails/StardewValley.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
       </div>
     </div>
@@ -191,7 +193,7 @@ function Home() {
       <div class="games">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.png">
+        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
         <img src="Media/Game Thumbnails/League of Legends.png">
