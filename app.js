@@ -98,49 +98,71 @@ function Home() {
     
     <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1> <br>
 
-    <div class="shelf">
-      <div>
-        <img class="shelf" src="Media/Discover.png">
-        <h3>Newly Updated →</h3>
+    <section>
+      <div class="shelf">
+        <div>
+          <img class="shelf" src="Media/Discover.png">
+          <h3>Newly Updated →</h3>
+        </div>
+        <div class="games">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img src="Media/Game Thumbnails/Subnautica2.jpg">
+          <img src="Media/Game Thumbnails/Minecraft.png">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Overwatch.jpg">
+        </div>
       </div>
-      <div class="games">
-        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-        <img src="Media/Game Thumbnails/Subnautica2.jpg">
-        <img src="Media/Game Thumbnails/Minecraft.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Overwatch.jpg">
-      </div>
-    </div>
+    </section>
 
-    <div class="shelf">
-      <div>
-        <img class="shelf" src="Media/Activity.png">
-        <h3>Friends are playing →</h3>
-      </div>
-      <div class="games">
-        <img src="Media/Game Thumbnails/Pokopia.jpg">
-        <img src="Media/Game Thumbnails/Overwatch.jpg">
-        <img src="Media/Game Thumbnails/StardewValley.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-      </div>
-    </div>
+    <section>
+      <div class="recommended">
+        <div class="header">
+          <img id="star" src="Media/Star Left.png"><h2>Ourcade Recommends</h2><img id="star" src="Media/Star Right.png">
+        </div>
 
-    <div class="shelf">
-      <div>
-        <img class="shelf" src="Media/Popular.png">
-        <h3>Popular →</h3>
+        <div class="image">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+        </div>
+
+        <div class="content">
+          <h3>The Outlast Trials: Project Boneyard</h3>
+        </div>
       </div>
-      <div class="games">
-        <img src="Media/Game Thumbnails/Overwatch.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
+    </section>
+
+    <section>
+      <div class="shelf">
+        <div>
+          <img class="shelf" src="Media/Activity.png">
+          <h3>Friends are playing →</h3>
+        </div>
+        
+        <div class="games">
+          <img src="Media/Game Thumbnails/Pokopia.jpg">
+          <img src="Media/Game Thumbnails/Overwatch.jpg">
+          <img src="Media/Game Thumbnails/StardewValley.jpg">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section>
+      <div class="shelf">
+        <div>
+          <img class="shelf" src="Media/Popular.png">
+          <h3>Popular →</h3>
+        </div>
+        <div class="games">
+          <img src="Media/Game Thumbnails/Overwatch.jpg">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+        </div>
+      </div>
+    </section>
   `;
   }
 
@@ -172,44 +194,56 @@ function Home() {
       </div>
     </section>
 
-    <div class="recommended">
-      <div>
-        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-      </div>
-      <div>
-        <h2>Outlast Trials: <br>Project Boneyard</h2>
-      </div>
-    </div>
+    <section>
+      <div class="recommended">
+        <div class="header">
+          <img id="star" src="Media/Star Left.png"><h2>Ourcade Recommends</h2><img id="star" src="Media/Star Right.png">
+        </div>
 
-    <div class="shelf">
-      <div>
-        <img class="shelf" src="Media/Activity.png">
-        <h3>Friends are playing →</h3>
-      </div>
-      <div class="games blur">
-        <img src="Media/Game Thumbnails/Pokopia.jpg">
-        <img src="Media/Game Thumbnails/Overwatch.jpg">
-        <img src="Media/Game Thumbnails/StardewValley.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-      </div>
-    </div>
+        <div class="image">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+        </div>
 
-    <div class="shelf">
-      <div>
-        <img class="shelf" src="Media/Popular.png">
-        <h3>Popular →</h3>
+        <div class="content">
+          <h3 class="rubik-distressed-regular" >The Outlast Trials: Project Boneyard</h3>
+        </div>
       </div>
-      <div class="games">
-        <img src="Media/Game Thumbnails/Overwatch.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
+    </section>
+
+    <section>
+      <div class="shelf">
+        <div>
+          <img class="shelf" src="Media/Activity.png">
+          <h3>Friends are playing →</h3>
+        </div>
+        <div class="games blur">
+          <img src="Media/Game Thumbnails/Pokopia.jpg">
+          <img src="Media/Game Thumbnails/Overwatch.jpg">
+          <img src="Media/Game Thumbnails/StardewValley.jpg">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img src="Media/Game Thumbnails/Palworld.jpg">
+        </div>
+        <a class="disclaimer" href="#/login">To see Friend Activity, please Login.</a>
       </div>
-    </div>
+    </section>
+
+    <section>
+      <div class="shelf">
+        <div>
+          <img class="shelf" src="Media/Popular.png">
+          <h3>Popular →</h3>
+        </div>
+        <div class="games">
+          <img src="Media/Game Thumbnails/Overwatch.jpg">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img src="Media/Game Thumbnails/Marvel Rivals.jpg">
+          <img src="Media/Game Thumbnails/Palworld.jpg">
+          <img src="Media/Game Thumbnails/Subnautica2.jpg">
+        </div>
+      </div>
+    </section>
   `;
 }
 
