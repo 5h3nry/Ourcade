@@ -156,17 +156,28 @@ function Home() {
     
     <h1 class="title jersey-10-regular" id="home"><span class="title">Our</span>Cade</h1> <br>
 
-    <div class="shelf">
-      <div>
-        <img class="shelf" src="Media/Discover.png">
-        <h3>Newly Updated →</h3>
+    <section>
+      <div class="shelf">
+        <div>
+          <img class="shelf" src="Media/Discover.png">
+          <h3>Newly Updated →</h3>
+        </div>
+        <div class="games">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img src="Media/Game Thumbnails/Subnautica2.jpg">
+          <img src="Media/Game Thumbnails/Minecraft.png">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Overwatch.jpg">
+        </div>
       </div>
-      <div class="games">
+    </section>
+
+    <div class="recommended">
+      <div>
         <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-        <img src="Media/Game Thumbnails/Subnautica2.jpg">
-        <img src="Media/Game Thumbnails/Minecraft.png">
-        <img src="Media/Game Thumbnails/League of Legends.png">
-        <img src="Media/Game Thumbnails/Overwatch.jpg">
+      </div>
+      <div>
+        <h2>Outlast Trials: <br>Project Boneyard</h2>
       </div>
     </div>
 
@@ -175,7 +186,7 @@ function Home() {
         <img class="shelf" src="Media/Activity.png">
         <h3>Friends are playing →</h3>
       </div>
-      <div class="games">
+      <div class="games blur">
         <img src="Media/Game Thumbnails/Pokopia.jpg">
         <img src="Media/Game Thumbnails/Overwatch.jpg">
         <img src="Media/Game Thumbnails/StardewValley.jpg">
