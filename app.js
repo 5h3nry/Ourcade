@@ -206,6 +206,8 @@ function Home() {
 
         <div class="content">
           <h3 class="rubik-distressed-regular" >The Outlast Trials: Project Boneyard</h3>
+          <p>The Outlast Trials' latest update brings a brand new trial for Coyle "Locksock the Warden", a whole overhaul for the Invasion gamemode and a brand new Ex-Pop <strong>"The Biter"</strong>. Needless for you to say, there's a lot for you to <em>sink your teeth into.</em></p>
+          <a class="button" href="">Watch the Trailer</a>
         </div>
       </div>
     </section>
@@ -272,9 +274,9 @@ function LogIn() {
     
     <form class="login">
       <h3>Username:</h3>
-      <input id="username" placeholder="Username"> <br> <br>
+      <input autocomplete="off" id="username" placeholder="Username"> <br> <br>
       <h3>Password:</h3>
-      <input id="password" type="password" placeholder="Password"> <br><br>
+      <input autocomplete="off" id="password" type="password" placeholder="Password"> <br><br>
       <button class="button" id="loginBtn">Login</button>
     </form>
   `;
