@@ -3,7 +3,7 @@
 // ==========================
 
 const state = {
-  user: 'Ava', //CHANGE BACK AFTER DONE EDITING PROTECTED PAGES
+  user: null, //CHANGE BACK AFTER DONE EDITING PROTECTED PAGES
   isLoading: false
 };
 
