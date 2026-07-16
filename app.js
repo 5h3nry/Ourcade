@@ -127,7 +127,7 @@ function Home() {
         <div class="content">
           <h3 class="rubik-distressed-regular" >The Outlast Trials:<br>Project Boneyard</h3>
           <p>The Outlast Trials' latest update brings a brand new trial for Coyle "Locksock the Warden", a whole overhaul for the Invasion gamemode and a brand new Ex-Pop <strong>"The Biter"</strong>. Needless for you to say, there's a lot for you to <em>sink your teeth into.</em></p>
-          <a class="button" href="">Watch the Trailer</a>
+          <a class="button" href="https://www.youtube.com/watch?v=iVMzxqKMz1k">Watch the Trailer</a>
         </div>
       </div>
     </section>
@@ -209,7 +209,7 @@ function Home() {
         <div class="content">
           <h3 class="rubik-distressed-regular" >The Outlast Trials:<br>Project Boneyard</h3>
           <p>The Outlast Trials' latest update brings a brand new trial for Coyle "Locksock the Warden", a whole overhaul for the Invasion gamemode and a brand new Ex-Pop <strong>"The Biter"</strong>. Needless for you to say, there's a lot for you to <em>sink your teeth into.</em></p>
-          <a class="button" href="">Watch the Trailer</a>
+          <a class="button" href="https://www.youtube.com/watch?v=iVMzxqKMz1k">Watch the Trailer</a>
         </div>
       </div>
     </section>
@@ -288,7 +288,9 @@ function Dashboard() {
   return String.raw`
     <div class="title">
       <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
-    </div>
+  </div>
+
+  <div><h1 class="activity jersey-10-regular">${state.user}'s Dashboard</h1></div>
     
     <img src="Media/PFP.png"><h2>Welcome, <span>${state.user}</span>.
   `;
@@ -331,9 +333,20 @@ function Review() {
   return String.raw`
     <div class="title">
       <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
-    </div>
-  <h1>Review</h1>
-  <p> Some information about the app</p>`;
+  </div>
+
+  <div><h1 class="activity jersey-10-regular">Review</h1></div>
+
+  <form>
+    <label for="game-Select">Game:</label>
+    <select name="select-Game" id="game-Select">
+      <option value="League">League of Legends</option>
+      <option value="Outlast">The Outlast Trials</option>
+      <option value="Minecraft">Minecraft</option>
+      <option value="Subnautica">Subnautica 2</option>
+      <option value="Pokopia">Pokopia</option>
+      <option value="Marvel">Marvel Rivals</option>
+  </form>`;
 }
 
 // ==========================
