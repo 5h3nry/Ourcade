@@ -256,7 +256,7 @@ function LogIn() {
   if (state.user) {
     return String.raw`
     <div class="title">
-      <h1 class="title jersey-10-regular" id="login"><span class="title"><a href="#/home">Our</span>Cade</h1></a>
+      <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
     </div>
       <h1>Welcome back, <span>${state.user}</span></h1>
       <button id="logoutBtn">Logout</button>
@@ -287,7 +287,7 @@ function LogIn() {
 function Dashboard() {
   return String.raw`
     <div class="title">
-      <h1 class="title jersey-10-regular" id="login"><span class="title"><a href="#/home">Our</span>Cade</h1></a>
+      <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
     </div>
     
     <img src="Media/PFP.png"><h2>Welcome, <span>${state.user}</span>.
@@ -297,17 +297,26 @@ function Dashboard() {
 function Activity() {
   return String.raw`
   <div class="title">
-      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+      <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
   </div>
 
-  <h1>Activity Page</h1>
-  <p> Some information about the app</p>`;
+  <div><h1 class="activity jersey-10-regular">Activity</h1></div>
+
+  <div class="activity-wrapper">
+    <div class="activity"><img class="pfp" src="Media/PFPs/Mario.jpg"><p><strong>Mario</strong> played <strong>Subnautica 2</strong> for the first time.</p></div>
+    <div class="activity"><img class="pfp" src="Media/PFPs/Kirby.jpg">
+      <div><p><strong>Kirby</strong> recommends <strong>The Outlast Trials</strong>:</p><br><p class="user-review">"DO NOT INHALE THE ENEMIES IT STRAIGHT UP GAVE ME SCHIZOPHRENIA !!!"</p></div>
+    </div>
+    <div class="activity"><img class="pfp" src="Media/PFPs/Pikachu.png"><p><strong>Pikachu</strong> played <strong>Pokopia</strong> for the first time.</p></div>
+    <div class="activity"><img class="pfp" src="Media/PFPs/Coyle.jpg"><p><strong>Coyle</strong> reached <strong id="emerald">Emerald</strong> in <strong>League of Legends</strong>!</p></div>
+</div>
+  `;
 }
 
 function Review() {
   return String.raw`
     <div class="title">
-      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+      <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
     </div>
   <h1>Review</h1>
   <p> Some information about the app</p>`;

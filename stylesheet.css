@@ -187,6 +187,7 @@
 
   div.title {
     background: #001932;
+    width: 100%;
   }
 
   
@@ -377,3 +378,54 @@
 
 
 /* Dashboard Stylings*/
+
+  div.activity {
+    display: flex;
+    color: white;
+    height: 7.5vh;
+    align-content: center;
+    padding: 5px;
+    width: 100vw;
+  }
+
+  div.activity p {
+    display: inline;
+    align-self: center;
+  }
+
+  div.activity:nth-child(even) {
+    background-color: #001932;
+  }
+
+  img.pfp {
+    border-radius: 100%;
+    display: inline;
+    height: 90%;
+    align-self: center;
+    border: white solid 3px;
+    margin: 10px;
+  }
+
+  h1.activity {
+    text-align: center;
+    border-bottom: #001932 solid 3px;
+  }
+
+  .activity-wrapper {
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .fixed {
+    position: absolute;
+  }
+
+  .user-review {
+    font-size: small;
+    font-style: italic;
+  }
+
+  #emerald {
+    color: #13A338;
+  }
