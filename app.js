@@ -287,8 +287,8 @@ function Dashboard() {
     <div class="title">
       <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
     </div>
-    <h1><span style="color: #0593f2;">${state.user}'s </span>Dashboard</h1>
-    <p>Protected content. User must be logged in to view this page</p>
+    
+    <img src="Media/PFP.png"><h2>Welcome, <span>${state.user}</span>.
   `;
 }
 
