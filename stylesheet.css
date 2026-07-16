@@ -371,5 +371,9 @@
     justify-content: center;
   }
 
+  .noUnderline {
+    text-decoration: none;
+  }
+
 
 /* Dashboard Stylings*/

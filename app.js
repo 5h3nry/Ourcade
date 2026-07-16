@@ -3,7 +3,7 @@
 // ==========================
 
 const state = {
-  user: null,
+  user: 'Ava', //CHANGE BACK AFTER DONE EDITING PROTECTED PAGES
   isLoading: false
 };
 
@@ -125,7 +125,9 @@ function Home() {
         </div>
 
         <div class="content">
-          <h3>The Outlast Trials: Project Boneyard</h3>
+          <h3 class="rubik-distressed-regular" >The Outlast Trials:<br>Project Boneyard</h3>
+          <p>The Outlast Trials' latest update brings a brand new trial for Coyle "Locksock the Warden", a whole overhaul for the Invasion gamemode and a brand new Ex-Pop <strong>"The Biter"</strong>. Needless for you to say, there's a lot for you to <em>sink your teeth into.</em></p>
+          <a class="button" href="">Watch the Trailer</a>
         </div>
       </div>
     </section>
@@ -136,13 +138,13 @@ function Home() {
           <img class="shelf" src="Media/Activity.png">
           <h3>Friends are playing →</h3>
         </div>
-        
         <div class="games">
           <img src="Media/Game Thumbnails/Pokopia.jpg">
           <img src="Media/Game Thumbnails/Overwatch.jpg">
           <img src="Media/Game Thumbnails/StardewValley.jpg">
           <img src="Media/Game Thumbnails/League of Legends.png">
           <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img src="Media/Game Thumbnails/Palworld.jpg">
         </div>
       </div>
     </section>
@@ -157,9 +159,9 @@ function Home() {
           <img src="Media/Game Thumbnails/Overwatch.jpg">
           <img src="Media/Game Thumbnails/League of Legends.png">
           <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Marvel Rivals.jpg">
+          <img src="Media/Game Thumbnails/Palworld.jpg">
+          <img src="Media/Game Thumbnails/Subnautica2.jpg">
         </div>
       </div>
     </section>
@@ -205,7 +207,7 @@ function Home() {
         </div>
 
         <div class="content">
-          <h3 class="rubik-distressed-regular" >The Outlast Trials: Project Boneyard</h3>
+          <h3 class="rubik-distressed-regular" >The Outlast Trials:<br>Project Boneyard</h3>
           <p>The Outlast Trials' latest update brings a brand new trial for Coyle "Locksock the Warden", a whole overhaul for the Invasion gamemode and a brand new Ex-Pop <strong>"The Biter"</strong>. Needless for you to say, there's a lot for you to <em>sink your teeth into.</em></p>
           <a class="button" href="">Watch the Trailer</a>
         </div>
@@ -254,7 +256,7 @@ function LogIn() {
   if (state.user) {
     return String.raw`
     <div class="title">
-      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+      <h1 class="title jersey-10-regular" id="login"><span class="title"><a href="#/home">Our</span>Cade</h1></a>
     </div>
       <h1>Welcome back, <span>${state.user}</span></h1>
       <button id="logoutBtn">Logout</button>
@@ -263,7 +265,7 @@ function LogIn() {
 
   return String.raw`
     <div class="title">
-      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+      <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
     </div>
     <br>
     <img class="login" src="Media/PFP.png">
@@ -285,7 +287,7 @@ function LogIn() {
 function Dashboard() {
   return String.raw`
     <div class="title">
-      <h1 class="title jersey-10-regular" id="login"><span class="title">Our</span>Cade</h1>
+      <h1 class="title jersey-10-regular" id="login"><span class="title"><a href="#/home">Our</span>Cade</h1></a>
     </div>
     
     <img src="Media/PFP.png"><h2>Welcome, <span>${state.user}</span>.
