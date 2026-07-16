@@ -302,14 +302,28 @@ function Activity() {
 
   <div><h1 class="activity jersey-10-regular">Activity</h1></div>
 
-  <div class="activity-wrapper">
-    <div class="activity"><img class="pfp" src="Media/PFPs/Mario.jpg"><p><strong>Mario</strong> played <strong>Subnautica 2</strong> for the first time.</p></div>
-    <div class="activity"><img class="pfp" src="Media/PFPs/Kirby.jpg">
-      <div><p><strong>Kirby</strong> recommends <strong>The Outlast Trials</strong>:</p><br><p class="user-review">"DO NOT INHALE THE ENEMIES IT STRAIGHT UP GAVE ME SCHIZOPHRENIA !!!"</p></div>
+  <section>
+    <div class="activity-wrapper">
+      <div class="activity"><img class="pfp" src="Media/PFPs/Mario.jpg"><p><strong>Mario</strong> played <strong>Subnautica 2</strong> for the first time.</p></div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Kirby.jpg">
+        <div><p><strong>Kirby</strong> recommends <strong>The Outlast Trials</strong>:</p><br><p class="user-review">"DO NOT INHALE THE ENEMIES IT STRAIGHT UP GAVE ME SCHIZOPHRENIA !!!"</p></div>
+      </div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Pikachu.png"><p><strong>Pikachu</strong> played <strong>Pokopia</strong> for the first time.</p></div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Coyle.jpg"><p><strong>Coyle</strong> reached <strong id="emerald">Emerald</strong> in <strong>League of Legends</strong>!</p></div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Luigi.jpg">
+        <div><p><strong>Luigi</strong> does not reccomend <strong>The Outlast Trials</strong>:</p><br><p class="user-review">"MAMA MIA!"</p></div>
+      </div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Mario.jpg">
+        <div><p><strong>Mario</strong> recommends <strong>The Outlast Trials</strong>:</p><br><p class="user-review">"Played this with Luigi and he cried the whole time, TOTALLY reccomend."</p></div>
+      </div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Villager.jpg"><p><strong>Villager</strong> played <strong>Stardew Valley</strong> for the first time.</p></div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Luigi.jpg"><p><strong>Luigi</strong> played <strong>The Outlast Trials</strong> for the first time.</p></div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Mario.jpg"><p><strong>Mario</strong> played <strong>The Outlast Trials</strong> for the first time.</p></div>
+      <div class="activity"><img class="game" src="Media/Game Thumbnails/Outlast Trials.jpg"><p><strong>The Outlast Trials</strong> recieved an update: <strong>"Project Boneyard"</strong></p></div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Bayonetta.jpg"><p><strong>Bayonetta</strong> reached <strong id="champion">Champion</strong> in <strong>Overwatch</strong>!</p></div>
+      <div class="activity"><img class="pfp" src="Media/PFPs/Peach.jpg"><p><strong>Peach</strong> played <strong>Minecraft</strong> for the first time.</p></div>
     </div>
-    <div class="activity"><img class="pfp" src="Media/PFPs/Pikachu.png"><p><strong>Pikachu</strong> played <strong>Pokopia</strong> for the first time.</p></div>
-    <div class="activity"><img class="pfp" src="Media/PFPs/Coyle.jpg"><p><strong>Coyle</strong> reached <strong id="emerald">Emerald</strong> in <strong>League of Legends</strong>!</p></div>
-</div>
+</section>
   `;
 }
 
@@ -383,11 +397,16 @@ function logout() {
     window.location.hash = '#/login'; // redirect to Home
   }
 }
+
+function resetScroll() {
+  document.getElementById("app").scroll(0, 0);
+}
 // ==========================
 // 8. Bootstrapping - App Start
 // ==========================
 
 window.addEventListener('hashchange', router);
+window.addEventListener('hashchange', resetScroll);
 window.addEventListener('load', router);
 window.addEventListener('hashchange', Nav)
 window.location.hash = '#/home';

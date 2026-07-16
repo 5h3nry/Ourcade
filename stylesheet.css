@@ -406,6 +406,15 @@
     margin: 10px;
   }
 
+  img.game {
+    display: inline;
+    border: white solid 3px;
+    height: 90%;
+    align-self: center;
+    margin: 10px;
+    margin-left: 17.5px;
+  }
+
   h1.activity {
     text-align: center;
     border-bottom: #001932 solid 3px;
@@ -428,4 +437,10 @@
 
   #emerald {
     color: #13A338;
+    text-shadow: #13A338 1px 0 10px;
+  }
+
+  #champion {
+    color: #C4A8F2;
+    text-shadow: #C4A8F2 1px 0 10px;
   }
