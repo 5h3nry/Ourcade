@@ -276,7 +276,7 @@
     background-color: #001932;
     background-image: radial-gradient(circle, #3a6794 0.84px, transparent 0.84px);
     background-size: 10.5px 10.5px;
-      box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
   }
 
   .header {
@@ -450,11 +450,62 @@
 
 /* Review Stylings */
 
-  .review {
-
+  label, input {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.5rem;
   }
 
+  select {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .review-wrapper {
+    font-family: "Jersey 10", sans-serif;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 40% 60%;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+  }
 
+  div.review.game {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  div.review.game img {
+    height: 90%;
+    box-shadow: 5px 5px #4d3399;
+  }
+
+  div.review.select {
+    align-content: center;
+  }
+
+  div.review.select>* {
+    margin-bottom: 10px;
+    margin-right: 3px;
+  }
+
+  div.review-input {
+    margin: 5px;
+    grid-column: 1 / span 2;
+    margin-left: 25px;
+  }
+
+  div.review-input textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    height: 175px;
+    padding: 10px;
+  }
+  
+  
 
 /* Dashboard Stylings */
 

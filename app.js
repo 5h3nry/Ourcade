@@ -3,7 +3,7 @@
 // ==========================
 
 const state = {
-  user: null, //CHANGE BACK AFTER DONE EDITING PROTECTED PAGES
+  user: 'Ava', //CHANGE BACK AFTER DONE EDITING PROTECTED PAGES
   isLoading: false
 };
 
@@ -288,11 +288,26 @@ function Dashboard() {
   return String.raw`
     <div class="title">
       <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
-  </div>
+    </div>
 
-  <div><h1 class="activity jersey-10-regular">${state.user}'s Dashboard</h1></div>
+    <div><h1 class="activity jersey-10-regular">${state.user}'s Dashboard</h1></div>
     
-    <img src="Media/PFP.png"><h2>Welcome, <span>${state.user}</span>.
+    <img src="Media/PFP.png">
+
+    <div id="topGames" class="shelf">
+        <div>
+          <img class="shelf" src="Media/Activity.png">
+          <h3>Your Top Games →</h3>
+        </div>
+        <div class="games">
+          <img src="Media/Game Thumbnails/Pokopia.jpg">
+          <img src="Media/Game Thumbnails/Overwatch.jpg">
+          <img src="Media/Game Thumbnails/StardewValley.jpg">
+          <img src="Media/Game Thumbnails/League of Legends.png">
+          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img src="Media/Game Thumbnails/Palworld.jpg">
+        </div>
+      </div>
   `;
 }
 
@@ -333,20 +348,62 @@ function Review() {
   return String.raw`
     <div class="title">
       <h1 class="title jersey-10-regular" id="login"><span class="title"><a class="noUnderline" href="#/home">Our</span>Cade</h1></a>
-  </div>
+    </div>
 
-  <div><h1 class="activity jersey-10-regular">Review</h1></div>
+    <div><h1 class="activity jersey-10-regular">Review</h1></div>
 
-  <form>
-    <label for="game-Select">Game:</label>
-    <select name="select-Game" id="game-Select">
-      <option value="League">League of Legends</option>
-      <option value="Outlast">The Outlast Trials</option>
-      <option value="Minecraft">Minecraft</option>
-      <option value="Subnautica">Subnautica 2</option>
-      <option value="Pokopia">Pokopia</option>
-      <option value="Marvel">Marvel Rivals</option>
-  </form>`;
+    <div class="review-wrapper">
+      <div class="review game">
+        <img src="Media/Game Thumbnails/League of Legends.png">
+      </div>
+
+      <div class="review select">
+          <label for="game-Select">Game:</label>
+          <select name="select-Game" id="game-Select">
+            <option value="League">League of Legends</option>
+            <option value="Outlast">The Outlast Trials</option>
+            <option value="Minecraft">Minecraft</option>
+            <option value="Subnautica">Subnautica 2</option>
+            <option value="Pokopia">Pokopia</option>
+            <option value="Marvel">Marvel Rivals</option>
+          </select><br>
+
+
+          <label for="playtime-Select">Playtime:</label>
+          <select name="select-Playtime" id="playtime-Select">
+            <option value="0-100">0-100 Hours</option>
+            <option value="100-500">100-500 Hours</option>
+            <option value="500-1000">500-1000 Hours</option>
+            <option value="1000-2000">1000-2000 Hours</option>
+            <option value="2000-3000">2000-3000 Hours</option>
+            <option value="3000+">3000+ Hours</option>
+          </select><br>
+
+          <label for="rank-Select">Rank:</label>
+          <select name="select-Rank" id="rank-Select">
+            <option value="Iron">Iron</option>
+            <option value="Bronze">Bronze</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+            <option value="Platinum">Platinum</option>
+            <option value="Emerald">Emerald</option>
+          </select><br>
+
+          <label class="star-rating" for="star-rating">Rating:</label><br>
+          <label> 1</label><input name="rating" type="radio">
+          <label> 2</label><input name="rating" type="radio">
+          <label> 3</label><input name="rating" type="radio">
+          <label> 4</label><input name="rating" type="radio">
+          <label> 5</label><input name="rating" type="radio">
+      </div>
+
+      <div class="review-input">
+        <label name="review">Leave your review:</label><br>
+        <textarea name="review">Type your review here.</textarea>
+        <input id="submit" type="submit" />
+      </div>
+    </div>
+  `;
 }
 
 // ==========================
