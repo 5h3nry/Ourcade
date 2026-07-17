@@ -3,7 +3,7 @@
 // ==========================
 
 const state = {
-  user: 'Ava', //CHANGE BACK AFTER DONE EDITING PROTECTED PAGES
+  user: null,
   isLoading: false
 };
 
@@ -43,7 +43,7 @@ const routes = {
 };
 
 // Define protected routes list (what's behind the login)
-const protectedRoutes = ['#/dashboard', '#/activity'];
+const protectedRoutes = ['#/dashboard', '#/activity', '#/review'];
 
 function router() {
   const hash = window.location.hash || '#/';
@@ -298,7 +298,7 @@ function Dashboard() {
       </div>
 
       <div class="dashboard info">
-        <h2 id="username">${state.user}</h2>
+        <h2 id="user">${state.user}</h2>
         <p>Hours Played: 67</p>
         <p>Games Owned: 15</p>
         <p>Achievements Earned: 329</p>
