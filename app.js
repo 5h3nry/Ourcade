@@ -292,20 +292,48 @@ function Dashboard() {
 
     <div><h1 class="activity jersey-10-regular">${state.user}'s Dashboard</h1></div>
     
-    <img src="Media/PFP.png">
+    <div class="dashboard-wrapper">
+      <div class="dashboard pfp">
+        <img src="Media/PFP.png">
+      </div>
 
-    <div id="topGames" class="shelf">
+      <div class="dashboard info">
+        <h2 id="username">${state.user}</h2>
+        <p>Hours Played: 67</p>
+        <p>Games Owned: 15</p>
+        <p>Achievements Earned: 329</p>
+      </div>
+
+      <div class="dashboard content">
+        <div class="shelf">
+          <div>
+            <img class="shelf" src="Media/Top Games.png">
+            <h3>Your Top Games →</h3>
+          </div>
+          
+          <div class="games">
+            <img src="Media/Game Thumbnails/Pokopia.jpg">
+            <img src="Media/Game Thumbnails/StardewValley.jpg">
+            <img src="Media/Game Thumbnails/Minecraft.png">
+            <img src="Media/Game Thumbnails/League of Legends.png">
+            <img src="Media/Game Thumbnails/Overwatch.jpg">
+          </div>
+        </div>
+
+        <div id="friends" class="shelf">
         <div>
           <img class="shelf" src="Media/Activity.png">
-          <h3>Your Top Games →</h3>
+          <h3>Friends →</h3>
         </div>
-        <div class="games">
-          <img src="Media/Game Thumbnails/Pokopia.jpg">
-          <img src="Media/Game Thumbnails/Overwatch.jpg">
-          <img src="Media/Game Thumbnails/StardewValley.jpg">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/Palworld.jpg">
+        <div class="friends">
+          <img src="Media/PFPs/Mario.jpg">
+          <img src="Media/PFPs/Luigi.jpg">
+          <img src="Media/PFPs/Peach.jpg">
+          <img src="Media/PFPs/Kirby.jpg">
+          <img src="Media/PFPs/Bayonetta.jpg">
+          <img src="Media/PFPs/Pikachu.png">
+          <img src="Media/PFPs/Coyle.jpg">
+          <img src="Media/PFPs/Villager.jpg">
         </div>
       </div>
   `;
