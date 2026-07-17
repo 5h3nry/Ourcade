@@ -330,8 +330,9 @@
   }
 
   .content p {
-    padding: 10px;
+    padding: 5px;
     font-size: 0.70rem;
+    margin-bottom: 5px;
   }
 
   .content a {
