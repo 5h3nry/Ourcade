@@ -16,17 +16,17 @@ function Nav() {
     <nav>
         ${hash = '#/home'
           ? `<div class='active'>
-            <a href="#/home"><img src="Media/Home.png"></a>
+            <a href="#/home"><img src="Media/Home.png"><p>Home</p></a>
             </div>` 
           : `<div class='inactive'>
-            <a href="#/home"><img src="Media/Home.png"></a>
+            <a href="#/home"><img src="Media/Home.png"><p>Home</p></a>
             </div>`}
-        <div><a href="#/activity"><img src="Media/Activity.png"></a></div>
+        <div><a href="#/activity"><img src="Media/Activity.png"><p>Activity</p></a></div>
         <a id="review" href="#/review"><img src="Media/Review.png"></a>
-        <div><a href="#/dashboard"><img src="Media/PFP.png"></a></div>
+        <div><a href="#/dashboard"><img src="Media/PFP.png"></a><p>Dashboard</p></div>
         ${state.user 
-          ? `<div><a href="#" id="logoutLink"><img src="Media/Logout.png"></a></div>` 
-          : `<div><a href="#/login"><img src="Media/Login.png"></a></div>`}
+          ? `<div><a href="#" id="logoutLink"><img src="Media/Logout.png"><p>Logout</p></a></div>` 
+          : `<div><a href="#/login"><img src="Media/Login.png"><p>Login</p></a></div>`}
     </nav>
   `;
 }

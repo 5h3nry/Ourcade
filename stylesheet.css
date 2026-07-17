@@ -59,6 +59,14 @@
     bottom: 0%;
   }
 
+  nav p, nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Jersey 10", sans-serif;
+    text-align: center;
+    margin-top: -10px;
+  }
+
   nav img {
     height: 75%;
     width: auto;
