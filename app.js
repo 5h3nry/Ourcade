@@ -105,11 +105,11 @@ function Home() {
           <h3>Newly Updated →</h3>
         </div>
         <div class="games">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/Subnautica2.jpg">
-          <img src="Media/Game Thumbnails/Minecraft.png">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/Overwatch.jpg">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for Subnautica 2" src="Media/Game Thumbnails/Subnautica2.jpg">
+          <img alt="The thumbnail for Minecraft." src="Media/Game Thumbnails/Minecraft.png">
+          <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
+          <img alt="The thumbnail for Overwatch" src="Media/Game Thumbnails/Overwatch.jpg">
         </div>
       </div>
     </section>
@@ -121,7 +121,7 @@ function Home() {
         </div>
 
         <div class="image">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
         </div>
 
         <div class="content">
@@ -139,12 +139,12 @@ function Home() {
           <h3>Friends are playing →</h3>
         </div>
         <div class="games">
-          <img src="Media/Game Thumbnails/Pokopia.jpg">
-          <img src="Media/Game Thumbnails/Overwatch.jpg">
-          <img src="Media/Game Thumbnails/StardewValley.jpg">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/Palworld.jpg">
+          <img alt="The thumbnail for Pokopia" src="Media/Game Thumbnails/Pokopia.jpg">
+          <img alt="The thumbnail for Overwatch" src="Media/Game Thumbnails/Overwatch.jpg">
+          <img alt="The thumbnail for Stardew Valley" src="Media/Game Thumbnails/StardewValley.jpg">
+          <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for Palworld" src="Media/Game Thumbnails/Palworld.jpg">
         </div>
       </div>
     </section>
@@ -156,12 +156,12 @@ function Home() {
           <h3>Popular →</h3>
         </div>
         <div class="games">
-          <img src="Media/Game Thumbnails/Overwatch.jpg">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/Marvel Rivals.jpg">
-          <img src="Media/Game Thumbnails/Palworld.jpg">
-          <img src="Media/Game Thumbnails/Subnautica2.jpg">
+          <img alt="The thumbnail for Overwatch" src="Media/Game Thumbnails/Overwatch.jpg">
+          <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for Marvel Rivals" src="Media/Game Thumbnails/Marvel Rivals.jpg">
+          <img alt="The thumbnail for Palworld" src="Media/Game Thumbnails/Palworld.jpg">
+          <img alt="The thumbnail for Subnautica 2" src="Media/Game Thumbnails/Subnautica2.jpg">
         </div>
       </div>
     </section>
@@ -187,11 +187,11 @@ function Home() {
           <h3>Newly Updated →</h3>
         </div>
         <div class="games">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/Subnautica2.jpg">
-          <img src="Media/Game Thumbnails/Minecraft.png">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/Overwatch.jpg">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for Subnautica 2" src="Media/Game Thumbnails/Subnautica2.jpg">
+          <img alt="The thumbnail for Minecraft." src="Media/Game Thumbnails/Minecraft.png">
+          <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
+          <img alt="The thumbnail for Overwatch" src="Media/Game Thumbnails/Overwatch.jpg">
         </div>
       </div>
     </section>
@@ -203,7 +203,7 @@ function Home() {
         </div>
 
         <div class="image">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
         </div>
 
         <div class="content">
@@ -221,12 +221,12 @@ function Home() {
           <h3>Friends are playing →</h3>
         </div>
         <div class="games blur">
-          <img src="Media/Game Thumbnails/Pokopia.jpg">
-          <img src="Media/Game Thumbnails/Overwatch.jpg">
-          <img src="Media/Game Thumbnails/StardewValley.jpg">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/Palworld.jpg">
+          <img alt="Pokopia" src="Media/Game Thumbnails/Pokopia.jpg">
+          <img alt="The thumbnail for Overwatch" src="Media/Game Thumbnails/Overwatch.jpg">
+          <img alt="The thumbnail for Stardew Valley" src="Media/Game Thumbnails/StardewValley.jpg">
+          <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for Palworld" src="Media/Game Thumbnails/Palworld.jpg">
         </div>
         <a class="disclaimer" href="#/login">To see Friend Activity, please Login.</a>
       </div>
@@ -239,12 +239,12 @@ function Home() {
           <h3>Popular →</h3>
         </div>
         <div class="games">
-          <img src="Media/Game Thumbnails/Overwatch.jpg">
-          <img src="Media/Game Thumbnails/League of Legends.png">
-          <img src="Media/Game Thumbnails/Outlast Trials.jpg">
-          <img src="Media/Game Thumbnails/Marvel Rivals.jpg">
-          <img src="Media/Game Thumbnails/Palworld.jpg">
-          <img src="Media/Game Thumbnails/Subnautica2.jpg">
+          <img alt="The thumbnail for Overwatch" src="Media/Game Thumbnails/Overwatch.jpg">
+          <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
+          <img alt="The thumbnail for The Outlast Trials" src="Media/Game Thumbnails/Outlast Trials.jpg">
+          <img alt="The thumbnail for Marvel Rivals" src="Media/Game Thumbnails/Marvel Rivals.jpg">
+          <img alt="The thumbnail for Palworld" src="Media/Game Thumbnails/Palworld.jpg">
+          <img alt="The thumbnail for Subnautica 2" src="Media/Game Thumbnails/Subnautica2.jpg">
         </div>
       </div>
     </section>
@@ -312,11 +312,11 @@ function Dashboard() {
           </div>
           
           <div class="games">
-            <img src="Media/Game Thumbnails/Pokopia.jpg">
-            <img src="Media/Game Thumbnails/StardewValley.jpg">
-            <img src="Media/Game Thumbnails/Minecraft.png">
-            <img src="Media/Game Thumbnails/League of Legends.png">
-            <img src="Media/Game Thumbnails/Overwatch.jpg">
+            <img alt="The thumbnail for Pokopia" src="Media/Game Thumbnails/Pokopia.jpg">
+            <img alt="The thumbnail for Stardew Valley" src="Media/Game Thumbnails/StardewValley.jpg">
+            <img alt="The thumbnail for Minecraft." src="Media/Game Thumbnails/Minecraft.png">
+            <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
+            <img alt="The thumbnail for Overwatch" src="Media/Game Thumbnails/Overwatch.jpg">
           </div>
         </div>
 
@@ -382,7 +382,7 @@ function Review() {
 
     <div class="review-wrapper">
       <div class="review game">
-        <img src="Media/Game Thumbnails/League of Legends.png">
+        <img alt="The thumbnail for League of Legends" src="Media/Game Thumbnails/League of Legends.png">
       </div>
 
       <div class="review select">
